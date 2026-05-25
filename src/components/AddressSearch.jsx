@@ -27,7 +27,7 @@ export default function AddressSearch({ onSearch, loading }) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="例: 新宿区西早稲田3-30-13"
+            placeholder="例: 新宿区歌舞伎町1-4-1"
             autoFocus
           />
           <button style={styles.searchBtn} type="submit" disabled={loading}>

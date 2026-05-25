@@ -34,7 +34,7 @@ export default function App() {
   const joystickRef  = useRef({ x: 0, y: 0 }); // ジョイスティック現在値
 
   const [showSpots, setShowSpots] = useState(false);
-  const [activeSpot, setActiveSpot] = useState(SPOTS[0]);
+  const [activeSpot, setActiveSpot] = useState(SPOTS[2]);
   const [loadingAddr, setLoadingAddr] = useState(false);
   const [currentAddress, setCurrentAddress] = useState(null);
   const [locating, setLocating] = useState(false);
@@ -125,7 +125,7 @@ export default function App() {
 
       {/* メインマップ */}
       <MapView
-        initialSpot={SPOTS[0]}
+        initialSpot={SPOTS[2]}
         joystickRef={joystickRef}
         onMapReady={handleMapReady}
         onCharacterReady={handleCharacterReady}
